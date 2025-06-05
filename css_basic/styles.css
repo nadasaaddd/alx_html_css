@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+aside {
+  flex: 1;
+  overflow-y: auto;
+}
+
+h1 {
+  color: red;
+}
+
+h2 {
+  color: blue;
+}
+
+aside,
+nav {
+  background-color: rgba(0, 0, 255, 0.508);
+  padding: 15px;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+}
