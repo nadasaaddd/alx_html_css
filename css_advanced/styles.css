@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans 3", sans-serif;
+  color: #fff;
+  zoom: 99%;
+}
+.landing-wrapper {
+  background-image: url("./assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav {
+  font-size: 12px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 120px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+
+  gap: 53px;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* section {
+  display: block;
+} */
+.header,
+.pros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section1 h1 {
+  font-size: 120px;
+  margin-bottom: -7px;
+  margin-top: 120px;
+}
+.spans {
+  display: flex;
+  gap: 70px;
+  font-weight: 500;
+  flex-direction: row;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.section1 button {
+  background-color: #c271ff;
+  border-style: none;
+  text-transform: uppercase;
+  padding: 13px 20px;
+  border-radius: 22px;
+  font-size: 14px;
+  margin: 45px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Drop shadow: vertical offset, blur, and slight opacity */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+.header button:hover {
+  background-color: #071629;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced drop shadow on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+.pros h2 {
+  font-size: 32px;
+  font-weight: 100;
+  margin-top: 120px;
+}
+.pros h2 span {
+  font-weight: 600;
+  color: #c271ff;
+}
+.avatar-pros {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 160px;
+  margin: 65px;
+}
+
+.av {
+  width: 150px;
+  height: 237px;
+}
+.av h3 {
+  font-size: 18px;
+}
+.av p {
+  font-style: italic;
+  font-size: 16px;
+  margin: 5px 0;
+}
+.section2 {
+  background-color: #c271ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+  padding: 90px 200px;
+}
+.section2 img {
+  width: 160px;
+  height: 160px;
+}
+
+.section2 blockquote,
+.section2 h3,
+.section2 p {
+  font-size: 22px;
+}
+.section2 blockquote,
+.section2 p {
+    font-weight: 300;
+}
+.text {
+  width: 730px;
+}
