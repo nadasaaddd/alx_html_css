@@ -27,9 +27,6 @@ nav ul {
   font-weight: 500;
   cursor: pointer;
 }
-/* section {
-  display: block;
-} */
 .header,
 .pros {
   display: flex;
@@ -51,7 +48,7 @@ nav ul {
   text-transform: uppercase;
   margin: 0;
 }
-.section1 button {
+button {
   background-color: #c271ff;
   border-style: none;
   text-transform: uppercase;
@@ -63,18 +60,20 @@ nav ul {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Drop shadow: vertical offset, blur, and slight opacity */
   transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
-.header button:hover {
-  background-color: #071629;
+button:hover {
+  background-color: grey;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced drop shadow on hover */
   transform: translateY(-2px); /* Lift effect */
 }
-
-.pros h2 {
+h2 {
   font-size: 32px;
   font-weight: 100;
+  margin: 70px 0;
+}
+.pros h2 {
   margin-top: 120px;
 }
-.pros h2 span {
+.purple {
   font-weight: 600;
   color: #c271ff;
 }
@@ -119,8 +118,166 @@ nav ul {
 }
 .section2 blockquote,
 .section2 p {
-    font-weight: 300;
+  font-weight: 300;
 }
 .text {
   width: 730px;
+}
+.section3 h2,
+.section5 h2 {
+  color: black;
+  text-align: center;
+}
+.all-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 100px;
+}
+.card h3,
+.card p,
+.card h4 {
+  color: black;
+}
+.card {
+  width: 255px;
+}
+
+.card-avatar {
+  width: 30px;
+  height: 30px;
+}
+
+.card {
+  padding: 10px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.card h3 {
+  color: #333;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.card .card-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+  padding: 10px 0;
+}
+
+.card h4 {
+  display: inline;
+  color: #a100ff;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.div-time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+}
+
+.card .fa-star {
+  color: #a100ff;
+  font-size: 16px;
+}
+.stars {
+  display: flex;
+  gap: 7px;
+}
+
+.card p:last-child {
+  color: #666;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.time {
+  color: #a100ff;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.section4 {
+  background-color: #071629;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section4 .all-cards div {
+  width: 257px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section5 h2 {
+  font-size: 60px;
+  margin: 50px 0 30px 0;
+}
+
+.section5 div,
+.section5 h3 {
+  color: black;
+}
+.section5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+.main div {
+  width: 350px;
+}
+.main {
+  margin: 55px;
+}
+.sub div {
+  margin: 20px 0 50px 0;
+  color: #666;
+}
+footer section {
+  background-color: #071629;
+  height: 249px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 105px 90px 70px 90px;
+}
+.social-media {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+footer section p {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
 }
