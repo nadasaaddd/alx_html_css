@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Headphones</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,15 +17,15 @@
     <div class="landing-wrapper">
       <header>
         <img src="assets/logo.png" alt="logo" />
-        <nav>
+        <nav id="navLinks">
           <ul>
             <li><a href="#what-we-do">What we do</a></li>
             <li><a href="#results">Our results</a></li>
-            <li><a href="">Contact us</a></li>
+            <li><a href="#contact">Contact us</a></li>
           </ul>
-          <!-- hamburger menu for mobile screens -->
-          <a class="menu-icon"><i class="fa-solid fa-bars"></i></a>
         </nav>
+        <!-- hamburger menu for mobile screens -->
+        <a class="menu-icon" id="menuToggle"><i class="fa-solid fa-bars"></i></a>
       </header>
       <main>
         <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
@@ -43,7 +44,7 @@
 
     <section id="what-we-do" class="black-font">
       <h2>What we do...</h2>
-      <p>
+      <p class="text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -69,12 +70,67 @@
         </div>
       </div>
     </section>
-    <section id="results"></section>
+    <section id="results">
+      <h2>Our results speak for themselves</h2>
+      <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+      <div class="all-cards">
+        <div class="pentagon" class="card">
+          <h3>+2%</h3>
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="pentagon" class="card">
+          <h3>+2%</h3>
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="pentagon" class="card">
+          <h3>+2%</h3>
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="pentagon" class="card">
+          <h3>+2%</h3>
+          <p>Lorem ipsum dolor</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="black-font">
+      <h2>Contact us</h2>
+      <form action="submit">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="2"
+          required
+        ></textarea>
+        <button>call to action</button>
+      </form>
+    </section>
+    <footer>
+      <section>
+        <div class="footer">
+          <img src="./assets/logo.png" alt="logo" />
+          <div class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <p>©headphones 2020</p>
+      </section>
+    </footer>
 
     <!-- FontAwesome for Icons -->
     <script
       src="https://kit.fontawesome.com/56ae3be63c.js"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
   </body>
 </html>
