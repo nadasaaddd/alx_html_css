@@ -1,5 +1,5 @@
 @media (min-width: 700px) {
-  .menu-icon {
+  .hamburger {
     display: none;
   }
 }
@@ -166,18 +166,37 @@ footer section p {
     display: none;
   }
   header {
-    display: flex;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     justify-content: start;
     gap: 15%;
   }
-  .menu-icon {
-    font-size: 25px;
-    cursor: pointer;
-    text-decoration: none; /* Ensure no underline */
+  .logo {
+    grid-column-start: 3;
+    grid-column-end: 4;
   }
 
- 
+  .hamburger {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 50px;
+    cursor: pointer;
+  }
+  nav ul {
+    display: none; /* Hide by default */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+  nav ul.active {
+    display: flex; /* Show when active */
+  }
+
   .footer {
     flex-direction: column;
     padding: 10%;
